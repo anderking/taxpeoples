@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TaxPeoples</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-style-10.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fileinput.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+</head>
+<body class="publicar">
+	<header>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a id="botonInicio" class="navbar-brand navbar-brand-taxPeoples" href="timeline.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+					</div>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav navbar-right nav-default">
+							<li><a href="timeline.html">Cabudare</a></li>
+							<li><a href="timeline.html">Barquisimeto</a></li>
+							<li><a href="timeline.html">Acarigua</a></li>
+							<li><a class="cerrarsesion" href="login.html">Cerrar Sesion</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+					<div class="text-center page-header">
+						<h1 class="text-center">Publica tu Servicio</h1>
+					</div>
+
+					<form method="POST" action="" accept-charset="UTF-8" enctype="multipart/form-data">
+						<div class="panel panel-primary box_flot">
+							<div class="panel-heading">
+								<h4>Publica tu servicio</h4>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="title" class="control-label">Titulo:</label>
+											<input class="form-control" placeholder="Titulo" required="required" name="title" type="text" id="title">
+										</div>
+										<div class="form-group">
+											<label for="content" class="control-label">Contenido:</label>
+											<textarea class="form-control trumbowyg" required="required" name="content" cols="50" rows="10" id="content"></textarea>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-group">
+											<label for="category_id" class="control-label">Ciudad:</label>
+											<select title="Seleccione una Ciudad" data-style="btn-primary" class="form-control selectpicker" id="category_id" name="category_id" data-live-search="true" required="required">
+
+												<option value="1">Cabudare</option>
+												<option value="2">Barquisimeto</option>
+												<option value="3">Quibor</option>
+												<option value="4">Carora</option>
+												<option value="5">Acarigua</option>
+												<option value="6">Centro</option>
+											</select>
+											<p><a href="ciudad.html">¿Nueva ciudad?</a></p>
+
+										</div>
+										<div class="form-group">
+											<label for="tags" class="control-label">Rutas:</label>
+											<select title="Seleccione una Ruta" data-style="btn-primary" class="form-control selectpicker" multiple name="tags[]" data-live-search="true" required="required">
+												<option value="1">Centro</option>
+												<option value="2">Aguaviva</option>
+												<option value="2">La Mata</option>
+												<option value="3">El Trigal</option>
+												<option value="4">Los Pinos</option>
+											</select>
+											<p><a href="ruta.html">¿Nueva ruta?</a></p>
+										</div>
+										<div class="form-group">
+											<label for="img" class="control-label">Imagen destacada (opcional):</label>
+											<input class="form-control file" id="img" name="img" type="file">
+										</div>
+										<div class="form-group">
+											<label for="tarifa" class="control-label">Tarifa:</label>
+											<input class="form-control" placeholder="Tarifa" required="required" name="tarifa" type="text" id="tarifa">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer text-center">
+								<input class="btn btn-info" type="submit" value="Publicar">
+								<a href="" class="btn btn-primary">Cancelar</a>
+								<a href="timeline.html" class="btn btn-default">Regresar</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="navbar navbar-default">
+			<p class="text-center">&copy; TaxPeoples. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/rif.js"></script>
+	<script type="text/javascript" src="js/fileinput.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+	
+	<script>
+	  $("#img").fileinput({
+			showUpload: false,
+	  });
+	  $('.selectpicker').selectpicker();
+	</script>
+
+</body>
+</html>

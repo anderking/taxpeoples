@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TaxPeoples</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-style-10.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/starrr.css">
+
+</head>
+<body class="timeline">
+	<header>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="perfil-miembro.html" class="navbar-brand botonperfil"><i class="fa fa-user" aria-hidden="true"></i>Miembro</a>
+						<a href="perfil-cliente.html" class="navbar-brand botonperfil"><i class="fa fa-user" aria-hidden="true"></i>Cliente</a>
+						<a href="perfil-admin.html" class="navbar-brand botonperfil"><i class="fa fa-user" aria-hidden="true"></i>Admin</a>
+					</div>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav navbar-right nav-default">
+							<li><a href="timeline.html">Cabudare</a></li>
+							<li><a href="timeline.html">Barquisimeto</a></li>
+							<li><a href="timeline.html">Acarigua</a></li>
+							<li><a class="cerrarsesion" href="login.html">Cerrar Sesion</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</header>
+	<main class="main">
+		<div class="presentacion box_flot">
+			<div id="promocional">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<h1>TaxPeoples</h1>
+							<p>TaxPeoples es una aplicación en la que su funcionalidad principal será ofrecer servicios de transportes haciendo uso de una red social interna en la que se pueda publicar, seguir usuarios, comentar, interactuar con las publicaciones, concretar transacciones y entre otras funcionalidades</strong></p>
+							<p class="text-center"><a href="publicar.html"  class="btn btn-primary">Empieza a publicar tus servicios!!!</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<h2 class="text-center">Publicaciones recientes</h2>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 text-center">
+							<form action="buscar.php" name="buscar-user"class="navbar-form navbar-left" role="search" method="POST">
+								<div class="input-group">
+									<input class="form-control" placeholder="Buscar..." aria-describedby="search" required="required" name="id" type="text">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12">
+							<div class="panel panel-primary box_flot">
+								<div class="panel-heading">
+									<h4><a href="showPublicar.html">Servicio de taxi</a></h4>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-md-3">
+											<div class="thumbnail">
+												<div class="img_container">
+													<img src="img/taxi.png" class="img-responsive img_article" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-12 col-md-9">
+											<h4><i class="fa fa-folder-open-o" aria-hidden="true"></i><b>Categoría: </b> <span class="badge badge-primary">Cabudare</span></h4>
+											<h4><i class="fa fa-tags" aria-hidden="true"></i><b>Tags: </b>
+											<span class="badge badge-primary">Centro</span>
+											</h4>
+											<h4>
+												<i class="fa fa-user-o" aria-hidden="true"></i><b>Post by: </b>
+												<div class="box_img">
+													<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+												</div>
+												<span class="badge badge-primary">
+													<a href="">Anderson Diaz</a>
+												</span>
+											</h4>
+											<h4><i class="fa fa-picture-o" aria-hidden="true"></i><b>Imagenes</b>: <span class="badge badge-primary">3</span></h4>
+											<h4><i class="fa fa-eye" aria-hidden="true"></i><b>Vistas</b> <span class="badge badge-primary">13</span></h4>
+											<h4><i class="fa fa-usd" aria-hidden="true"></i><b>Tarifa</b> <span class="badge badge-primary">10$</span></h4>
+											<h4><i class="fa fa-clock-o" aria-hidden="true"></i><b>Publicado hace 1 mes</b></h4>
+											<h4><i class="fa fa-clock-o" aria-hidden="true"></i><b>Editado hace 4 días</b></h4>
+											<div class="row">
+												<div class="col-xs-4 col-sm-4 col-md-4">
+													<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+													<span class="badge badge-primary">
+														<a href="#likes" data-toggle="modal">4 <small class="hidden-xs">Likes</small></a>
+													</span>
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4">
+													<i class="fa fa-comments" aria-hidden="true"></i><span class="badge badge-primary"><a href="#modalComentarios" data-toggle="modal">2 <small class="hidden-xs">Comentarios</small></a></span>
+												</div>
+												<div class="col-xs-4 col-sm-4 col-md-4">
+													<div class="dropdown">
+														<i class="fa fa-share" aria-hidden="true"></i><a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" data-placement="left" title="Editar o Eliminar"><span class="badge badge-primary">0 <small class="hidden-xs">veces compartido</small></span></a>
+														<ul class="dropdown-menu" aria-labelledby="dLabel">
+															<li><a href="#">Compartir Ahora</a></li>
+															<li><a href="#" data-toggle="modal" data-target="#modalRecomendar">Recomendar a un Amigo</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<div class="navbar navbar-default">
+			<p class="text-center">&copy; TaxPeoples. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+	
+	<!-- Modal likes -->
+	<div id="likes" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="text-center modal-title">Likes</h2>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Anderson</span> le gusta este artículo </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario3.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Gabriel</span> le gusta este artículo </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario4.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Yaimar</span> le gusta este artículo </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario5.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Albenis</span> le gusta este artículo </h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Modal comentarios-->
+	<div id="modalComentarios" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title">Comentarios</h3>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Anderson</span>
+							<div class="star"></div>
+
+						</div>
+						<div class="media-body">
+							<h4>Servicios recomendados!! muy buena atención al cliente.</h4>
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario2.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Yaimar</span>
+							<div class="star"></div>
+						</div>
+						<div class="media-body">
+							<h4>Muy buena atención al cliente, me gusto el servicio.</h4>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--Modal Recomendar-->
+	<div id="modalRecomendar" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title">Amigos</h3>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Anderson Díaz</span>
+						</div>
+						<div class="media-body">
+							<a href="#" class="btn btn-info btn-sm">Recomendar</a>
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario2.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Yaimar Rodriguez</span>
+						</div>
+						<div class="media-body">
+							<a href="#" class="btn btn-info btn-sm">Recomendar</a>
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario3.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Albenis Rodriguez</span>
+						</div>
+						<div class="media-body">
+							<a href="#" class="btn btn-info btn-sm">Recomendar</a>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/rif.js"></script>
+	<script type="text/javascript" src="js/starrr.js"></script>
+	<script>
+		$('.star').starrr({
+			rating:3
+		});
+	</script>
+</body>
+</html>
+
+

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TaxPeoples</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-style-10.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fileinput.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">	
+</head>
+<body class="perfil">
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a id="botonInicio" class="navbar-brand navbar-brand-taxPeoples" href="timeline.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right" >
+						<li><a href="#modalMensajes" data-toggle="modal"><i class="fa fa-comment-o" aria-hidden="true"></i>Mensajes</a></li>
+						<li><a href="#modalNotificaciones" data-toggle="modal"><i class="fa fa-globe" aria-hidden="true"></i>Notificaciones</a></li>
+						<li><a href="#modalConfiguracion" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a></li>
+						<li><a href="listaciudades.html"><i class="fa fa-car" aria-hidden="true"></i>Administrar Ciudades</a></li>
+						<li><a href="listarutas.html"><i class="fa fa-car" aria-hidden="true"></i>Administrar Rutas</a></li>
+						<li><a class="cerrarsesion" href="login.html">Cerrar Sesion</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="list-group">
+						<div class="list-group-item">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="thumbnail thumbnailPerfil">
+										<div class="img_container">
+											<img src="img/userj.png" alt="usuario" class="img-responsive img_perfil">
+										</div>
+									</div>
+									<p class="text-center tipo_user"><strong>Usuario Miembro</strong></p>
+									<p class="text-center"><a id="cambiarFotoperfil" href="#modalCambiarfoto" data-toggle="modal">Cambiar Foto de perfil</a></p>
+									<p class="text-center">
+										<a href="#modalDesactivarcuenta" data-toggle="modal" class="btn btn-danger">Desactivar Cuenta</a>
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<h2>Hola! Anderson Diaz</h2>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolorum illo obcaecati a, ratione debitis magnam eveniet repellendus provident odio sed in ea, quidem iste necessitatibus! Ducimus autem dolorem, fugit.</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<i class="fa fa-check-circle" aria-hidden="true"></i>
+									<a href="#modalSeguidores" class="enlace" data-toggle="modal">
+										<span>Seguidores</span>
+									</a>
+									<span class="badge badge-primary">4</span>
+								</div>
+								<div class="col-xs-6">
+									<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+									<a href="#modalSeguidos" class="enlace" data-toggle="modal">
+										<span>Seguidos</span>
+									</a>
+									<span class="badge badge-primary">4</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="panel panel-primary box_flot">
+						<div class="panel-heading">
+							<h4><a href="showPublicar.html">Servicio de taxi</a></h4>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<div class="img_container">
+											<img src="img/taxi.png" class="img-responsive img_article" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-9">
+									<h4><i class="fa fa-folder-open-o" aria-hidden="true"></i><b>Categoría: </b> <span class="badge badge-primary">Cabudare</span></h4>
+									<h4><i class="fa fa-tags" aria-hidden="true"></i><b>Tags: </b>
+									<span class="badge badge-primary">Centro</span>
+									</h4>
+									<h4><i class="fa fa-picture-o" aria-hidden="true"></i><b>Imagenes</b>: <span class="badge badge-primary">3</span></h4>
+									<h4><i class="fa fa-eye" aria-hidden="true"></i><b>Vistas</b> <span class="badge badge-primary">13</span></h4>
+									<h4><i class="fa fa-usd" aria-hidden="true"></i><b>Tarifa</b> <span class="badge badge-primary">10$</span></h4>
+									<h4><i class="fa fa-clock-o" aria-hidden="true"></i><b>Publicado hace 1 mes</b></h4>
+									<h4><i class="fa fa-clock-o" aria-hidden="true"></i><b>Editado hace 4 días</b></h4>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<div class="navbar navbar-default">
+			<p class="text-center">&copy; TaxPeoples. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<!-- Modal seguidores-->
+	<div id="modalSeguidores" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="text-center modal-title"> 4 Seguidores</h2>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4><span class="badge badge-primary">Anderson</span> te ha seguido </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario3.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4><span class="badge badge-primary">Gabriel</span> te ha seguido </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario4.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4><span class="badge badge-primary">Yaimar</span> te ha seguido </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario5.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4><span class="badge badge-primary">Albenis</span> te ha seguido </h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Modal seguidos-->
+	<div id="modalSeguidos" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="text-center modal-title"> 4 Seguidos</h2>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>Sigues a <span class="badge badge-primary">Anderson</span></h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario3.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>Sigues a <span class="badge badge-primary">Gabriel</span></h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario4.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>Sigues a <span class="badge badge-primary">Yaimar</span></h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario5.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>Sigues a <span class="badge badge-primary">Albenis</span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Modal mensajes-->
+	<div id="modalMensajes" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title">Bandeja de entrada</h3>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Anderson</span>
+						</div>
+						<div class="media-body">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario2.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Yaimar</span>
+						</div>
+						<div class="media-body">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+						</div>
+					</div>
+					<hr>
+					<div class="text-center">
+						<a href="chat.html" class="btn btn-primary">Ver mas mensajes</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Modal notificaciones-->
+	<div id="modalNotificaciones" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title">Notificaciones</h3>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario4.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Yaimar</span>
+						</div>
+						<div class="media-body">
+							<h4>Le dio Like a tu publicación!</h4>
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario3.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Gabriel</span>
+						</div>
+						<div class="media-body">
+							<h4>Comentó a tu publicación!</h4>
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario2.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+							<span class="badge badge-primary badge_block">Albenis</span>
+						</div>
+						<div class="media-body">
+							<h4>Contrató tus servicios</h4>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal configuracion -->
+	<div id="modalConfiguracion" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h3 class="modal-title">Actualice sus datos</h3>
+				</div>
+				<div class="modal-body">
+					<form name="conf-perfil" action="" class="form-horizontal" method="POST">
+
+						<div class="form-group">
+							<label for="razon_social" class="col-xs-12 col-sm-4 col-md-4 control-label">Empresa:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="text" class="form-control" name="razon_social" id="razon_social" placeholder="Nombre de la compañía">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="rif" class="col-xs-12 col-sm-4 col-md-4 control-label">RIF:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="text" class="form-control" name="rif" id="rif" placeholder="RIF">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="direccion" class="col-xs-12 col-sm-4 col-md-4 control-label">Dirección:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="text" class="form-control" name="direccion" id="direccion" placeholder="Dirección">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="estado" class="col-xs-12 col-sm-4 col-md-4 control-label">Estado:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<select required title="Seleccione un Estado" data-style="btn-primary" data-live-search="true" class="form-control selectpicker" name="estado" id="estado">
+									<option value="1">Amazonas, Puerto Ayacucho</option>
+									<option value="2">Anzoátegui, Barcelona</option>
+									<option value="3">Apure, San Fernando de Apure</option>
+									<option value="4">Aragua, Maracay</option>
+									<option value="5">Barinas, Barinas</option>
+									<option value="6">Bolívar, Ciudad Bolívar</option>
+									<option value="7">Carabobo, Valencia</option>
+									<option value="8">Cojedes, San Carlos</option>
+									<option value="9">Delta Amacuro, Tucupita</option>
+									<option value="10">Distrito Capital, Caracas</option>
+									<option value="11">Falcón, Coro</option>
+									<option value="12">Guárico, San Juan de los Morros</option>
+									<option value="13">Lara, Barquisimeto</option>
+									<option value="14">Mérida, Mérida</option>
+									<option value="15">Miranda, Los Teques</option>
+									<option value="16">Monagas, Maturín</option>
+									<option value="17">Nueva Esparta, La Asunción</option>
+									<option value="18">Portuguesa, Guanare</option>
+									<option value="19">Sucre, Cumaná</option>
+									<option value="20">Táchira, San Cristóbal</option>
+									<option value="21">Trujillo, Trujillo</option>
+									<option value="22">Vargas, La Guaira</option>
+									<option value="23">Yaracuy, San Felipe</option>
+									<option value="24">Zulia, Maracaibo</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="telefono_movil" class="col-xs-12 col-sm-4 col-md-4 control-label">Telefono Movil:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input class="form-control" placeholder="Ejemplo: +58 (ddd) ddd-dddd" name="telefono_movil" type="text" id="telefono_movil">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="telefono_ofic" class="col-xs-12 col-sm-4 col-md-4 control-label">Telefono Oficina:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input class="form-control" placeholder="Ejemplo: +58 (ddd) ddd-dddd" name="telefono_ofic" type="text" id="telefono_ofic">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="telefono_otro" class="col-xs-12 col-sm-4 col-md-4 control-label">Telefono Otro:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input class="form-control" placeholder="Ejemplo: +58 (ddd) ddd-dddd" name="telefono_otro" type="text" id="telefono_otro">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-xs-12 col-sm-4 col-md-4 control-label">Email:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="email" class="form-control" name="email" id="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-12 col-sm-4 col-md-4 control-label">Contraseña:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="password" class="form-control" name="password" id="password" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-12 col-sm-4 col-md-4 control-label">Confirmar:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Password">
+							</div>
+						</div>
+							
+						<div class="form-group boton">
+							<label class="col-xs-12 col-sm-4 col-md-4 control-label"></label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input type="submit" class="btn btn-primary" value="Actualizar"/>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal likes -->
+	<div id="modalLikes" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h2 class="text-center modal-title"> 4 Likes</h2>
+				</div>
+				<div class="modal-body">
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Anderson</span> le gusta este artículo </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario3.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Gabriel</span> le gusta este artículo </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario4.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Yaimar</span> le gusta este artículo </h4>
+						</div>
+					</div>
+					<div class="media">
+						<div class="pull-left">
+							<div class="box_img">
+								<img src="img/usuario5.jpg" class="img-circle img_profiel" alt="app_laravel_1541424967.jpg">
+							</div>
+						</div>
+						<div class="media-body">
+							<h4>A <span class="badge badge-primary">Albenis</span> le gusta este artículo </h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal cambiarFoto -->
+	<div id="modalCambiarfoto" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form action="" method="POST">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="text-center modal-title">Cambiar foto de perfil</h3>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<input class="form-control file" id="img" name="img" type="file">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="text-center">
+							<button type="submit" class="btn btn-info" data-dissmis="modal">Enviar</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal contratar -->
+	<div id="modalDesactivarcuenta" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	    	<form action="" method="POST">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h3 class="text-center modal-title">Desactivar cuenta</h3>
+		      </div>
+		      <div class="modal-body">
+		        <p class="text-center">¿Estas seguro que deseas desactivar tu cuenta?</p>
+		      </div>
+		      <div class="modal-footer">
+		        <div class="text-center">
+		          <button type="submit" class="btn btn-danger" data-dissmis="modal">Confirmar</button>
+		          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+		        </div>
+		      </div>
+		  </form>
+	    </div>
+	  </div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/rif.js"></script>
+	<script type="text/javascript" src="js/fileinput.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+	<script>
+	  $('.selectpicker').selectpicker();
+	</script>	
+</body>
+</html>

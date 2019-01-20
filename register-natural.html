@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TaxPeoples</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-style-10.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fileinput.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+</head>
+<body class="register_natural">
+	<header>
+		<header>
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand navbar-brand-taxPeoples" href="index.html">TaxPeoples</a>
+					</div>
+					<div id="navbar" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav navbar-right" >
+							<li class=""><a href="index.html" >Home</a></li>
+							<li class=""><a href="login.html" >Login</a></li>
+							<li class=""><a href="register.html">Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+		</header>
+	</header>
+	
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<form action="" name="registro" method="POST" class="form-horizontal col-sm-offset-3 col-sm-6">
+						<div class="form-group">
+							<label for="name" class="col-xs-12 col-sm-4 col-md-4 control-label">Nombre:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="text" class="form-control" name="name" id="name" placeholder="Nombre">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="apellido" class="col-xs-12 col-sm-4 col-md-4 control-label">Apellido:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="cedula" class="col-xs-12 col-sm-4 col-md-4 control-label">Cedula:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="text" class="form-control" name="cedula" id="cedula" placeholder="Cedula">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="sexo" class="col-xs-12 col-sm-4 col-md-4 control-label">Sexo:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<label class="sexo control-label">Masculino</label><input required type="radio" name="sexo" id="sexoM" value="M">
+								<label class="sexo control-label">Femenino</label><input required type="radio" name="sexo" id="sexoF" value="F">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="edo_civil" class="col-xs-12 col-sm-4 col-md-4 control-label">Edo civil:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<label class="edo_civil control-label">Soltero</label><input required type="radio" name="edo_civil" id="edo_civilS" value="M">
+								<label class="edo_civil control-label">Casado</label><input required type="radio" name="edo_civil" id="edo_civilC" value="F">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="estado" class="col-xs-12 col-sm-4 col-md-4 control-label">Estado:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<select required title="Seleccione un Estado" data-style="btn-primary" data-live-search="true" class="form-control selectpicker" name="estado" id="estado">
+									<option value="1">Amazonas, Puerto Ayacucho</option>
+									<option value="2">Anzoátegui, Barcelona</option>
+									<option value="3">Apure, San Fernando de Apure</option>
+									<option value="4">Aragua, Maracay</option>
+									<option value="5">Barinas, Barinas</option>
+									<option value="6">Bolívar, Ciudad Bolívar</option>
+									<option value="7">Carabobo, Valencia</option>
+									<option value="8">Cojedes, San Carlos</option>
+									<option value="9">Delta Amacuro, Tucupita</option>
+									<option value="10">Distrito Capital, Caracas</option>
+									<option value="11">Falcón, Coro</option>
+									<option value="12">Guárico, San Juan de los Morros</option>
+									<option value="13">Lara, Barquisimeto</option>
+									<option value="14">Mérida, Mérida</option>
+									<option value="15">Miranda, Los Teques</option>
+									<option value="16">Monagas, Maturín</option>
+									<option value="17">Nueva Esparta, La Asunción</option>
+									<option value="18">Portuguesa, Guanare</option>
+									<option value="19">Sucre, Cumaná</option>
+									<option value="20">Táchira, San Cristóbal</option>
+									<option value="21">Trujillo, Trujillo</option>
+									<option value="22">Vargas, La Guaira</option>
+									<option value="23">Yaracuy, San Felipe</option>
+									<option value="24">Zulia, Maracaibo</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="direccion" class="col-xs-12 col-sm-4 col-md-4 control-label">Dirección:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="text" class="form-control" name="direccion" id="direccion" placeholder="Dirección">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="telefono_movil" class="col-xs-12 col-sm-4 col-md-4 control-label">Telefono Movil:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input class="form-control" placeholder="Ejemplo: +58 (ddd) ddd-dddd" name="telefono_movil" type="text" id="telefono_movil">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="telefono_ofic" class="col-xs-12 col-sm-4 col-md-4 control-label">Telefono Oficina:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input class="form-control" placeholder="Ejemplo: +58 (ddd) ddd-dddd" name="telefono_ofic" type="text" id="telefono_ofic">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="telefono_otro" class="col-xs-12 col-sm-4 col-md-4 control-label">Telefono Otro:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input class="form-control" placeholder="Ejemplo: +58 (ddd) ddd-dddd" name="telefono_otro" type="text" id="telefono_otro">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email" class="col-xs-12 col-sm-4 col-md-4 control-label">Email:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="email" class="form-control" name="email" id="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-12 col-sm-4 col-md-4 control-label">Contraseña:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="password" class="form-control" name="password" id="password" placeholder="Password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-xs-12 col-sm-4 col-md-4 control-label">Confirmar:</label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input required type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Password">
+							</div>
+						</div>
+
+						<div class="form-group boton">
+							<label class="col-xs-12 col-sm-4 col-md-4 control-label"></label>
+							<div class="col-xs-12 col-sm-8 col-md-8">
+								<input type="submit" class="btn btn-primary" value="Registrarse"/>
+								<a href="register.html" class="btn btn-primary">Regresar</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="navbar navbar-default">
+			<p class="text-center">&copy; TaxPeoples. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/rif.js"></script>
+	<script type="text/javascript" src="js/fileinput.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.js"></script>
+	<script>
+	  $('.selectpicker').selectpicker();
+	</script>
+</body>
+</html>

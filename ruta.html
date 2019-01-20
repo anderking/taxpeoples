@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TaxPeoples</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-style-10.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fileinput.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+</head>
+<body class="publicar">
+	<header>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a id="botonperfil" href="perfil.html" class="navbar-brand"><i class="fa fa-user" aria-hidden="true"></i>PERFIL</a>
+					</div>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav navbar-right nav-default">
+							<li><a href="timeline.html">Cabudare</a></li>
+							<li><a href="timeline.html">Barquisimeto</a></li>
+							<li><a href="timeline.html">Acarigua</a></li>
+							<li><a class="cerrarsesion" href="login.html">Cerrar Sesion</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+					<div class="text-center page-header">
+						<h1 class="text-center">Registrar Ruta</h1>
+					</div>
+					<form method="POST" action="" accept-charset="UTF-8" class="form-horizontal">
+						<div class="panel panel-primary box_flot">
+							<div class="panel-heading">
+								<h3 class="panel-title">Registrar Ruta</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-xs-12 col-sm-12 col-md-12">
+										<div class="form-group">
+											<label for="name" class="col-xs-12 col-sm-2 col-md-4 control-label">Nombre:</label>
+											<div class="col-xs-12 col-sm-10 col-md-5">
+												<input class="form-control" placeholder="Nombre" required="required" name="name" type="text" id="name">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="row">
+									<div class="col-xs-12 col-sm-offset-2 col-sm-10 col-md-offset-4 col-md-8">
+										<input class="btn btn-info" type="submit" value="Registrar">
+										<input class="btn btn-primary" type="reset" value="Cancelar">
+										<a href="listarutas.html" class="btn btn-default">Regresar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="navbar navbar-default">
+			<p class="text-center">&copy; TaxPeoples. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+
+</body>
+</html>

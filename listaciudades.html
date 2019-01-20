@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TaxPeoples</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-style-10.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fileinput.css">
+	<link rel="stylesheet" href="css/bootstrap-select.css">
+</head>
+<body class="publicar">
+	<header>
+		<header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a id="botonperfil" href="perfil-miembro.html" class="navbar-brand"><i class="fa fa-user" aria-hidden="true"></i>PERFIL</a>
+					</div>
+					<div class="collapse navbar-collapse" id="menu">
+						<ul class="nav navbar-nav navbar-right nav-default">
+							<li><a href="listaciudades.html"><i class="fa fa-car" aria-hidden="true"></i>Administrar Ciudades</a></li>
+							<li><a href="listarutas.html"><i class="fa fa-car" aria-hidden="true"></i>Administrar Rutas</a></li>
+							<li><a class="cerrarsesion" href="login.html">Cerrar Sesion</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</header>
+	
+	<main class="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<div class="text-center page-header">
+						<h1 class="text-center">Lista Ciudades</h1>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6 text-center">
+							<div class="row">
+								<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+									<a href="#" data-toggle="modal" data-target="#modal-delete-ciudades-all" class="btn btn-danger">Eliminar todo</a>
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+									<a href="ciudad.html" class="btn btn-primary">Nueva Ciudad</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6 text-center">
+							<form method="GET" action="" accept-charset="UTF-8" class="navbar-form">
+								<div class="input-group">
+									<input class="form-control" placeholder="Buscar..." aria-describedby="search" required="required" name="name" type="text">
+									<span class="input-group-btn" >
+										<button class="btn btn-info" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="table-responsive">
+				<table class="table table-hover table-condensed">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Acción</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Cabudare</td>
+							<td>
+								<a class="btn btn-info" href="editarciudad.html">Editar</a>
+								<a class="btn btn-danger" href="#" data-toggle="modal" data-target="#modal-delete-ciudades"><b>Eliminar</b>
+								</td>
+							</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="navbar navbar-default">
+			<p class="text-center">&copy; TaxPeoples. Todos los derechos reservados.</p>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	
+	<!--Modal Eliminar todas las ciudades -->
+	<div id="modal-delete-ciudades-all" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form method="GET" action="" accept-charset="UTF-8">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="text-center modal-title">Confirme eliminación</h3>
+					</div>
+					<div class="modal-body">
+						<p class="text-center">Se eliminaran todos las ciudades, sus publicaciones relacionadas y no se podra recuperar la información, estas seguro?</p>
+					</div>
+					<div class="modal-footer">
+						<div class="text-center">
+							<button type="submit" class="btn btn-danger" data-dissmis="modal">Confirmar</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--Modal Eliminar una ciudad -->
+	<div id="modal-delete-ciudades" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<form method="GET" action="" accept-charset="UTF-8">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h3 class="text-center modal-title">Confirme eliminación</h3>
+					</div>
+					<div class="modal-body">
+						<p class="text-center">¿Estas seguro de eliminar esta Ciudad?</p>
+					</div>
+					<div class="modal-footer">
+						<div class="text-center">
+							<button type="submit" class="btn btn-danger" data-dissmis="modal">Confirmar</button>
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
